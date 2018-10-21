@@ -1,0 +1,68 @@
+body{
+  background-image:url("http://imglf2.nosdn.127.net/img/NnpWTTFzcTFiMi9nK254S05QdjlwYkQrQVdvY29mbk40TVdHd1JTVGFPVndYZCtSeDAxTnd3PT0.jpg?imageView&thumbnail=1680x0&quality=96&stripmeta=0&type=jpg%7Cwatermark&type=2&text=wqkg566A54ix5omL57uYIC8gamF2ZWV5cmUubG9mdGVyLmNvbQ==&font=bXN5aA==&gravity=southwest&dissolve=30&fontsize=340&dx=16&dy=20&stripmeta=0");
+  background-repeat: repeat;
+}
+
+#main_page{
+  width:600px;
+  height:350px;
+  background-color: rgba(251,211,65,0.8);
+  position:absolute;
+  margin-left: 20px;
+  margin-right: 20px;
+  top:10%;
+  left:21.5%;
+  float:left;
+}
+
+#show_area{
+  width:600px;
+  height:1200px;
+  position:absolute;
+  background-color: rgba(251,249,175,0.9);
+  top:410px;
+  left:21.5%;
+  float:left;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 50px;
+  display:none;
+}
+
+h1{
+  font-family: Century Gothic;
+  font-weight: bold;
+  color:#393e46;
+  text-align:center;
+}
+
+p{
+  font-family: Century Gothic;
+  color:#393e46;
+  text-align:center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  line-height: 20px;
+}
+
+button{
+  background-color: #f8b500;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-family: Century Gothic;
+  font-weight:bold;
+  padding: 10px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  margin-left: 34%;
+  margin-right:33%;
+  margin-top: 1%;
+}
+
+button:hover{
+  background-color:#00adb5;
+}
