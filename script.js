@@ -32,3 +32,7 @@ function recommend(){
     document.getElementById("insert_photo").innerHTML = "<img src='https://wx1.sinaimg.cn/mw690/c17f1bdegy1fwg8n9pmmaj20f00u0any.jpg'>"
   }
 }
+
+function embed_airtable(){
+  document.getElementById("show_table").style.display="block";
+  }
