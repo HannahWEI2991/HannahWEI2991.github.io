@@ -1,16 +1,19 @@
 #body1{
   background-image:url("http://imglf2.nosdn.127.net/img/NnpWTTFzcTFiMi9nK254S05QdjlwYkQrQVdvY29mbk40TVdHd1JTVGFPVndYZCtSeDAxTnd3PT0.jpg?imageView&thumbnail=1680x0&quality=96&stripmeta=0&type=jpg%7Cwatermark&type=2&text=wqkg566A54ix5omL57uYIC8gamF2ZWV5cmUubG9mdGVyLmNvbQ==&font=bXN5aA==&gravity=southwest&dissolve=30&fontsize=340&dx=16&dy=20&stripmeta=0");
   background-repeat: repeat;
+  font-family:Century Gothic;
 }
 
 #body2{
   background-image:url("http://upload.ellemen.com/2015/1229/1451379834488.png");
   background-repeat: repeat;
+  font-family:Century Gothic;
 }
 
 #body3{
   background-image:url("https://s9.rr.itc.cn/r/wapChange/20171_17_19/a8vlx76311599722331.jpeg");
   background-repeat: repeat;
+  font-family:Century Gothic;
 }
 
 ul.navbar {
@@ -29,6 +32,7 @@ ul.navbar li {
    border-right: 1em solid #343434 }
  ul.navbar a {
    text-decoration:none;
+   text-align: center;
    color:#343434;
   }
  a:visited {
@@ -75,7 +79,7 @@ ul.navbar li {
 
 #main_page_3{
   width:650px;
-  height:2050px;
+  height:2100px;
   background-color: rgba(249,249,249,0.8);
   position:absolute;
   margin-left: 20px;
