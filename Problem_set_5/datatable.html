@@ -14,7 +14,7 @@
       <body>
            <br /><br />
            <div class="container">
-                <h1 align="center">15 HK Restaurants Newly Recommended by Michelin Guide</h3><br/>
+                <h1 align="center">15 HK Restaurants <br>Newly Recommended by Michelin Guide</h3><br/>
                 <h3 align="center">Detailed Information</h3><br />
                 <table id="data-table" class="table table-bordered">
                      <thead>
@@ -41,7 +41,7 @@
  <script>
  $(document).ready(function(){
       $('#data-table').DataTable({
-           "ajax"     :     "https://api.airtable.com/v0/appQl45FkNG6DrbHy/Restaurant?api_key=keyPGaOFOWVMaoigo&maxRecords=15&view=Grid%20view",
+           "ajax"     :     "url:'https://api.airtable.com/v0/appQl45FkNG6DrbHy/Restaurant?api_key=keyPGaOFOWVMaoigo&maxRecords=15&view=Grid%20view'",
            "columns"     :     [
                 {     "data"     :     "Name"     },
                 {     "data"     :     "Picture"},
