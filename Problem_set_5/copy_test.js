@@ -66,7 +66,7 @@ $(document).ready(function(){
                       table1_items.push(value.fields.Name);
                       table1_items.push(value.fields.Location);
                       table1_items.push(value.fields.Address);
-                      table1_items.push(value.fields.Contact_Number);
+                      table1_items.push(value.fields.Contact);
                       table1_items.push(value.fields.Payment_Method);
                       table1_items.push(value.fields.Average_Cost);
                       table1_items.push(value.fields.Tags);
