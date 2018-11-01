@@ -87,7 +87,7 @@ $(document).ready(function(){
                         defaultContent:"" },
                     { title: "Address",
                       defaultContent:"" },
-                    { title: "Contact Number",
+                    { title: "Contact",
                       defaultContent:""},
                     { title: "Payment Method",
                         defaultContent:""},
