@@ -92,7 +92,7 @@ ul.navbar li {
 
 
 #show_table{
-  width:1250px;
+  width:1200px;
   height:700px;
   position:absolute;
   background-color: rgba(251,249,175,0.9);
@@ -102,8 +102,7 @@ ul.navbar li {
   margin-left: 20px;
   margin-right: 20px;
   margin-bottom: 50px;
-  padding:15px;
-  left:27%;
+  padding:10px;
   display:none;
 }
 
