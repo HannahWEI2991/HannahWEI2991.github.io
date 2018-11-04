@@ -96,8 +96,7 @@ $(document).ready(function(){
       $.each(result.records,function(key,value){
          table3_items = [];
          table3_items.push(value.fields.Name);
-         table3_items.push(value.fields.No_of_Comments_Openrice);
-         table3_items.push(value.fields.No_of_Comments_Dianping);
+         table3_items.push(value.fields.openrice_page_followers);
          table3_dataSet.push(table3_items);
          console.log(table3_items);
       });
@@ -110,10 +109,8 @@ $(document).ready(function(){
                    columns: [
                    { title: "Name",
                      defaultContent:""},
-                   { title: "Openrice",
+                   { title: "Openrice Page Followers",
                        defaultContent:"" },
-                   { title: "Dianping",
-                        defaultContent:"" },
                       ],
                       });
 
@@ -123,7 +120,7 @@ $(document).ready(function(){
                type:'bar',
            },
            bar:{
-               title:"Comments Number"
+               title:"Openrice Page Followers"
            }
          });
   });
