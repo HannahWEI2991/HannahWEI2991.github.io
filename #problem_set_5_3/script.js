@@ -52,7 +52,7 @@ $(document).ready(function(){
       $.each(result.records,function(key,value){
          table2_items = [];
          table2_items.push(value.fields.Name);
-         table2_items.push(value.fields.Picture);
+         table2_items.push("<img src='"+value.fields.Picture[0].thumbnails.large.url+"' width=180px height=120px/>");
          table2_items.push(value.fields.Price);
          table2_items.push(value.fields.Restaurant);
          table2_dataSet.push(table2_items);
@@ -68,13 +68,64 @@ $(document).ready(function(){
                    { title: "Name",
                      defaultContent:""},
                    { title: "Picture",
-                       defaultContent:"" },
+                       defaultContent:"",},
                    { title: "Price",
                      defaultContent:"" },
                    { title: "Restaurant",
                      defaultContent:""},
-                    ]
+                   ],
+                   columnDefs:[
+                    {target:1,
+                     data:"img",
+                     render:function(url,type,full){
+                       return"<img src='$url'/>"
+                     }
+                   }
+                              ],
     });
   });
   });
+
+  $("button#button3").click(function(){
+    var table3_items = [];
+    var i = 0;
+    var airtable_data_3 = "https://api.airtable.com/v0/appQl45FkNG6DrbHy/Rating?api_key=keyPGaOFOWVMaoigo&maxRecords=15&view=Grid%20view"
+    var table3_dataSet = [];
+
+    $.getJSON(airtable_data_3,function(result){
+      $.each(result.records,function(key,value){
+         table3_items = [];
+         table3_items.push(value.fields.Name);
+         table3_items.push(value.fields.No_of_Comments_Openrice);
+         table3_items.push(value.fields.No_of_Comments_Dianping);
+         table3_dataSet.push(table3_items);
+         console.log(table3_items);
+      });
+         console.log(table3_dataSet);
+
+         $("#table3").DataTable({
+           data:table3_dataSet,
+           retrive:true,
+           destroy:true,
+                   columns: [
+                   { title: "Name",
+                     defaultContent:""},
+                   { title: "Openrice",
+                       defaultContent:"" },
+                   { title: "Dianping",
+                        defaultContent:"" },
+                      ],
+                      });
+
+         var chart = c3.generate({
+           data:{
+               columns:table3_dataSet,
+               type:'bar',
+           },
+           bar:{
+               title:"Comments Number"
+           }
+         });
+  });
+});
 });

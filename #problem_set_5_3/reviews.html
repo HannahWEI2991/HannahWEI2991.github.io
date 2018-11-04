@@ -6,9 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
   <link rel="stylesheet" href="https://static.pingendo.com/bootstrap/bootstrap-4.1.3.css">
-  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.11/d3.js"></script>
-  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/c3/0.1.29/c3.js"></script>
-  <link href="//cdnjs.cloudflare.com/ajax/libs/c3/0.1.29/c3.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+ <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+ <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+ <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.4.11/d3.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.1.29/c3.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.1.29/c3.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -28,13 +31,12 @@
       </div>
     </div>
   </nav>
-  <div class="py-5 text-center text-white h-100 align-items-center d-flex" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url(https://images.pexels.com/photos/761854/pexels-photo-761854.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940);  background-position: center center, center center;  background-size: cover, cover;  background-repeat: repeat, repeat;">
+  <div class="py-5 text-center text-white h-100 align-items-center d-flex" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url(https://images.pexels.com/photos/761854/pexels-photo-761854.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);  background-position: center center, center center;  background-size: cover, cover;  background-repeat: repeat, repeat;">
     <div class="container py-5">
       <div class="row">
         <div class="mx-auto col-lg-8 col-md-10">
           <h1 class="display-3 mb-4">Rating and Reviews</h1>
-          <p class="lead mb-5">Many consumers will score these restaurants and make some comments on Openrice and Dianping.&nbsp;<br><br>Here are some statistics summarized from these two websites for your information. Hope it will give you some implications on choosing the restaurants.&nbsp;</p>
-          <button id="button3" class="btn btn-lg btn-primary mx-1">Show Me</button>
+          <p class="lead mb-5">Many consumers will score these restaurants and make some comments on Openrice and Dianping. Here are some statistics summarized from these two websites for your information. Hope it will give you some implications on choosing the restaurants.</p>
         </div>
       </div>
     </div>
@@ -42,11 +44,17 @@
   <div class="py-5 text-center">
     <div class="container">
       <div class="row">
-        <div id="chart"></div>
-        <h1 id="chart">This text will not be visible</h1>
+        <div class="col-md-12">
+          <h1 class="mb-3">Number of Comments</h1>
+          <button id="button3" class="btn btn-lg btn-primary mx-1">Show Me</a>
+        </div>
+        <div class="table-responsive" id="rw" style="display:none;">
+          <table id="table3" width="100%" class="table table-bordered"></table>
       </div>
     </div>
   </div>
+  <div id="chart" style="padding-left:2em;padding-right:2em"></div>
+</div>
   <div class="py-3">
     <div class="container">
       <div class="row">
@@ -56,11 +64,8 @@
       </div>
     </div>
   </div>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 20px;right:20px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:220px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo Free&nbsp;&nbsp;<img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16"></pingendo>
   <script src="script.js"></script>
+  <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 20px;right:20px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:220px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo Free&nbsp;&nbsp;<img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16"></pingendo>
 </body>
 
 </html>
