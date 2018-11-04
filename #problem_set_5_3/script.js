@@ -22,6 +22,7 @@ $(document).ready(function(){
          $("#table1").DataTable({
            data:table1_dataSet,
            retrive:true,
+           destroy:true,
            columns: [
                    { title: "Name",
                      defaultContent:""},
@@ -38,5 +39,42 @@ $(document).ready(function(){
                   ]
          });
     });
+  });
+
+
+  $("button#button2").click(function(){
+    var table2_items = [];
+    var i = 0;
+    var airtable_data_2 = "https://api.airtable.com/v0/appQl45FkNG6DrbHy/Specialty?api_key=keyPGaOFOWVMaoigo&maxRecords=29&view=Grid%20view"
+    var table2_dataSet = [];
+
+    $.getJSON(airtable_data_2,function(result){
+      $.each(result.records,function(key,value){
+         table2_items = [];
+         table2_items.push(value.fields.Name);
+         table2_items.push(value.fields.Picture);
+         table2_items.push(value.fields.Price);
+         table2_items.push(value.fields.Restaurant);
+         table2_dataSet.push(table2_items);
+         console.log(table2_items);
+      });
+         console.log(table2_dataSet);
+
+         $("#table2").DataTable({
+           data:table2_dataSet,
+           retrive:true,
+           destroy:true,
+                   columns: [
+                   { title: "Name",
+                     defaultContent:""},
+                   { title: "Picture",
+                       defaultContent:"" },
+                   { title: "Price",
+                     defaultContent:"" },
+                   { title: "Restaurant",
+                     defaultContent:""},
+                    ]
+    });
+  });
   });
 });
