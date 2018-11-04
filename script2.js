@@ -10,7 +10,6 @@ function CreateGraphic(data){
                   x:{
                       type:"category",
                       categories: ['潮樂園','英記麵家','增煇大排檔&增煇藝廚','聚興家','坤記煲仔小菜','麥文記麵家','Samsen 泰麵','嚐囍煲仔小菜','德記潮州菜館','靠得住','信得過','茑','益新美食館','粵來順','容記小菜王'],
-                      show:true,
                     },
                   },
          type: 'bar',
