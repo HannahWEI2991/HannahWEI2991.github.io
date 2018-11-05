@@ -19,6 +19,9 @@
               .addLayer(mapboxTiles)
               .setView([22.9518892547,115.6327851182], 14);
         var marker = L.marker([22.9518892547,115.6327851182], {draggable: true})
+              .bindPopup('<a href="https://zh.wikipedia.org/zh-hans/%E9%99%86%E4%B8%B0%E5%B8%82" target="_blank">陆丰市</a>')
+              .addTo(map);
+        var marker = L.marker([22.9518892547,115.6327851182], {draggable: true})
               .bindPopup('<a href="https://zh.wikipedia.org/zh-hans/%E9%99%86%E4%B8%B0%E5%B8%82" target="_blank">North Point</a>')
               .addTo(map);
     </script>
