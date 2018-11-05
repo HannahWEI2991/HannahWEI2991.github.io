@@ -11,7 +11,7 @@ $(document).ready(function(){
          table1_items = [];
          table1_items.push(value.fields.Name);
          table1_items.push(value.fields.Location);
-         table1_items.push(value.fields.Style_Desc);
+         table1_items.push(value.fields.Style);
          table1_items.push(value.fields.Contact);
          table1_items.push(value.fields.Payment_Method);
          table1_items.push(value.fields.Address);
