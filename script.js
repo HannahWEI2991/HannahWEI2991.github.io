@@ -121,7 +121,7 @@ $(document).ready(function(){
            },
            bar:{
                title:"Openrice Page Followers"
-           }
+           },
          });
   });
 });
