@@ -1,6 +1,6 @@
 function CreateGraphic(data){
      var chart = c3.generate({
-         bindto:"#chart",
+         bindto:"#chart_2",
          data:{
          columns: [
                   ['Highly Recommend',163,45,93,17,176,263,94,55,136,112,84,102,48,45,49],
