@@ -27,3 +27,38 @@ function CreateGraphic(data){
                        });
      var lables = document.getElementById('label').innerHTML="0-潮樂園 1-英記麵家 2-增煇大排檔&增煇藝廚 3-聚興家 4-坤記煲仔小菜 5-麥文記麵家 6-Samsen 泰麵 7-嚐囍煲仔小菜 8-德記潮州菜館 9-靠得住 10-信得過 11-茑 12-益新美食館 13-粵來順 14-容記小菜王";
                      }
+
+ function recommend(){
+     var food_style = prompt("What kind of food are you looking for?\n(Please input a or b)\na-Exotic Food\nb-Local Food")
+     var place = prompt("Which place are you going to?\n(Please input 1 or 2 or 3)\n1-New Territories\n2-Kowloon\n3-Hong Kong Island")
+     if (food_style=="a" && place=="1"){
+        document.getElementById("show_area").style.display="block";
+        document.getElementById("place").innerHTML = "Exotic Food in New Terriroties";
+        document.getElementById("insert_photo").innerHTML = "<img src='https://wx1.sinaimg.cn/mw690/c17f1bdegy1fwg8n9bublj20f00u0aer.jpg'>"
+                       }
+    else if(food_style=="a" && place=="2"){
+        document.getElementById("show_area").style.display="block";
+        document.getElementById("place").innerHTML = "Exotic Food in Kowloon";
+        document.getElementById("insert_photo").innerHTML = "<img src='https://wx2.sinaimg.cn/mw690/c17f1bdegy1fwg8n9fls4j20f00u0n7y.jpg'>"
+                       }
+    else if(food_style=="a" && place=="3"){
+        document.getElementById("show_area").style.display="block";
+        document.getElementById("place").innerHTML = "Exotic Food in Hong Kong Island";
+        document.getElementById("insert_photo").innerHTML = "<img src='https://wx2.sinaimg.cn/mw690/c17f1bdegy1fwg8n97slsj20f00u0gxm.jpg'>"
+                       }
+    else if(food_style=="b" && place=="1"){
+        document.getElementById("show_area").style.display="block";
+        document.getElementById("place").innerHTML = "Local Food in New Terriroties";
+        document.getElementById("insert_photo").innerHTML = "<img src='https://wx2.sinaimg.cn/mw690/c17f1bdegy1fwg8n9s54qj20f00u0nay.jpg'>"
+                       }
+    else if(food_style=="b" && place=="2"){
+        document.getElementById("show_area").style.display="block";
+        document.getElementById("place").innerHTML = "Local Food in Kowloon";
+        document.getElementById("insert_photo").innerHTML = "<img src='https://wx2.sinaimg.cn/mw690/c17f1bdegy1fwg8n9k2tkj20f00u0qgv.jpg'>"
+                       }
+     else if(food_style=="b" && place=="3"){
+        document.getElementById("show_area").style.display="block";
+        document.getElementById("place").innerHTML = "Local Food in Hong Kong Island";
+        document.getElementById("insert_photo").innerHTML = "<img src='https://wx1.sinaimg.cn/mw690/c17f1bdegy1fwg8n9pmmaj20f00u0any.jpg'>"
+                       }
+                     }
