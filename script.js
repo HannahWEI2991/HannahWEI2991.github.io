@@ -38,6 +38,7 @@ $(document).ready(function(){
                        defaultContent:""},
                   ]
          });
+         var title = document.getElementById('title1').innerHTML = "The Amount of New Michelin Restaurants in Each Area";
     });
 
     var table1_2_items = [];
