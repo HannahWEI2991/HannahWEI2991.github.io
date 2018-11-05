@@ -39,6 +39,32 @@ $(document).ready(function(){
                   ]
          });
     });
+
+    var table1_2_items = [];
+    var i = 0;
+    var airtable_data_1_2 = "https://api.airtable.com/v0/appQl45FkNG6DrbHy/Location?api_key=keyPGaOFOWVMaoigo&maxRecords=8&view=Grid%20view";
+    var table1_2_dataSet = [];
+     $.getJSON(airtable_data_1_2,function(result){
+       $.each(result.records,function(key,value){
+         table1_2_items = [];
+         table1_2_items.push(value.fields.Name);
+         table1_2_items.push(value.fields.Total_entities);
+         table1_2_dataSet.push(table1_2_items);
+         console.log(table1_2_items);
+       });
+         console.log(table1_2_dataSet);
+         $('#table1_2').DataTable({
+           data:table1_2_dataSet,
+           retrive:true,
+           destroy:true,
+           columns:[
+             { title: "Location",
+               defaultContent:""},
+             { title: "New Michelin Restaurants Amount",
+               defaultContent:""},
+           ]
+         });
+     });
   });
 
 
