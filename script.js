@@ -28,7 +28,7 @@ $(document).ready(function(){
                      defaultContent:""},
                    { title: "Location",
                        defaultContent:"" },
-                   { title: "Style",
+                   { title: "Style_Desc",
                      defaultContent:"" },
                    { title: "Contact",
                      defaultContent:""},
