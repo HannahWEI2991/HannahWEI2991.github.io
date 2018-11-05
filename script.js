@@ -64,7 +64,8 @@ $(document).ready(function(){
                defaultContent:""},
            ]
          });
-         var chart_1 = c3.generate({
+         
+         var chart = c3.generate({
            data:{
                columns:table1_2_dataSet,
                type:'bar',
