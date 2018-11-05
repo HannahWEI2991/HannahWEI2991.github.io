@@ -38,7 +38,6 @@ $(document).ready(function(){
                        defaultContent:""},
                   ]
          });
-         var title = document.getElementById('title1').innerHTML = "The Amount of New Michelin Restaurants in Each Area";
     });
 
     var table1_2_items = [];
@@ -64,6 +63,19 @@ $(document).ready(function(){
              { title: "New Michelin Restaurants Amount",
                defaultContent:""},
            ]
+         });
+         var chart_1 = c3.generate({
+           data:{
+               columns:table1_2_dataSet,
+               type:'bar',
+           },
+           bar:{
+               title:"New Michelin Restaurants in Each Area"
+           },
+           axis:{
+             x:{label:'location'},
+             y:{label:'# of Restaurants'}
+           },
          });
      });
   });
