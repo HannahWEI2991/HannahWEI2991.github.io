@@ -3,7 +3,7 @@ $(document).ready(function(){
   $("button#button1").click(function(){
     var table1_items = [];
     var i = 0;
-    var airtable_data = "https://api.airtable.com/v0/appQl45FkNG6DrbHy/Restaurant?api_key=keyPGaOFOWVMaoigo&maxRecords=15&view=Grid%20view"
+    var airtable_data = "https://api.airtable.com/v0/appQl45FkNG6DrbHy/Restaurant?api_key=keyPGaOFOWVMaoigo&sortField=_createdTime&sortDirection=desc"
     var table1_dataSet = [];
 
     $.getJSON(airtable_data,function(result){
