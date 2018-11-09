@@ -6,6 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
   <link rel="stylesheet" href="https://static.pingendo.com/bootstrap/bootstrap-4.1.3.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+    integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+    crossorigin=""/>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="leaflet.js"></script>
 </head>
 
 <body>
@@ -28,17 +36,24 @@
     <div class="container py-5">
       <div class="row">
         <div class="mx-auto col-lg-8 col-md-10">
-          <h1 class="display-3 mb-4">Discover HK Food</h1>
-          <p class="lead mb-5">Known as "World's Food Fair", Hong Kong is a perfect place for foodies. From road-side stalls to world-class restaurants, you can always find something that caters your taste. Get ready for all kinds of delicous food in Hong Kong!</p>
+          <h1 class="display-3 mb-4" style="font-size:65px">Find Your Destination!</h1>
+          <div id="mapid">
+          <script>
+            var mapboxTiles =L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={pk.eyJ1IjoiaGFubmFoYWFhIiwiYSI6ImNqb2ExcGQ3bjBoMGUzb253ZjZ5YmpiNGEifQ.mCjEO56nm77NS0fnCh3Hxg}', {
+                                          attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+                                          maxZoom: 18,
+                                          id: 'mapid',
+                                          accessToken: 'pk.eyJ1IjoiaGFubmFoYWFhIiwiYSI6ImNqb2ExcGQ3bjBoMGUzb253ZjZ5YmpiNGEifQ.mCjEO56nm77NS0fnCh3Hxg'
+}).addTo(mymap);
+            var mymap = L.map('mapid').setView([22.3313182100,114.1628472300], 13);
+          </script>
+          </div>
           <button class="btn btn-lg btn-primary mx-1" onclick="recommend()">Get Recommendation</button>
         </div>
       </div>
     </div>
   </div>
-  <div id="show_area" style="display:none;padding-left:25%;padding-top:10px">
-    <h1 id="place" style="align:center"><strong>New Territory</strong></h1>
-      <p id="insert_photo">What can I find</p>
-    </div>
+
   <div class="py-3">
     <div class="container">
       <div class="row">
@@ -48,10 +63,6 @@
       </div>
     </div>
   </div>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  <script src="script2.js"></script>
   <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 20px;right:20px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:220px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo Free&nbsp;&nbsp;<img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16"></pingendo>
 </body>
 </html>
