@@ -471,26 +471,35 @@
               <div class="panel panel-default">
                 <div class="panel-heading">
                   <h4 class="check-title">
-											<a data-toggle="collapse" data-parent="#accordion" href="#">
-                                                <span class="acc-icons"></span> 香港教育硕士联展·北京站
+											<a data-toggle="collapse" class="active" data-parent="#accordion" href="#check2">
+                        <span class="acc-icons"></span>香港教育硕士联展·北京站
 											</a>
 										</h4>
                 </div>
-                <div id="check2" class="panel-collapse collapse">
+                <div id="check2" class="panel-collapse collapse in">
                   <div class="panel-body">
-                    <div class="col-md-6 col-sm-6 col-xs-12" style="width:300px; padding-left:0">
-                    <div class="well-middle">
-                      <div class="single-well">
-                          <br>
+                    <div class="row">
+                      <!-- single-well end-->
+                      <div class="col-md-6 col-sm-6 col-xs-12" style="width:300px; padding-left:0">
+                        <div class="well-middle">
+                          <div class="single-well">
+                              <br>
+                              <p><b>时间：</b>2018年12月16日星期日 14:00 - 18:00</p>
+                              <p><b>地点：</b>广州大学城小谷围街立德街66号雅乐轩酒店</p>
+                              <p><b>内容：</b>港大、港中文、港理工等学院课程负责人亲临现场。联展采取讲座+摊位咨询的活动形式，申请者可以和招生官面对面交流。</p>
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                  </div>
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                      <div class="well-left">
-                        <div class="single-well">
+                      <!-- map-->
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="well-left">
+                          <div class="single-well">
+                        <div id="map2" style="width: 600px; height: 300px; border: 4px solid #f2f4fb; margin:auto;"></div>
+                          </div>
                         </div>
                       </div>
                     </div>
+
                   </div>
                 </div>
               </div>
@@ -636,13 +645,21 @@
 
   <!-- map script -->
   <script>
-               var mapboxTiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {attribution: 'Map data &copy; <a href="https://openstreetmap.org">OpenStreetMap</a>', maxZoom: 18,})
+               var mapboxTiles1 = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {attribution: 'Map data &copy; <a href="https://openstreetmap.org">OpenStreetMap</a>', maxZoom: 18,})
                var map1 = L.map('map1')
-                     .addLayer(mapboxTiles)
+                     .addLayer(mapboxTiles1)
                      .setView([23.039620765729655,113.40595504359848], 15);
                var marker1 = L.marker([23.040620985729655,113.39929990009848])
                       .bindPopup('雅乐轩酒店')
                       .addTo(map1);
+
+                      var mapboxTiles2 = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {attribution: 'Map data &copy; <a href="https://openstreetmap.org">OpenStreetMap</a>', maxZoom: 18,})
+                      var map2 = L.map('map1')
+                            .addLayer(mapboxTiles2)
+                            .setView([23.039620765729655,113.40595504359848], 15);
+                      var marker1 = L.marker([23.040620985729655,113.39929990009848])
+                             .bindPopup('雅乐轩酒店')
+                             .addTo(map2);
  </script>
 
   <!-- JavaScript Libraries -->
