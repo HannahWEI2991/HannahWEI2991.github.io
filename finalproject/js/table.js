@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-  $("button#button1").click(function(){
+
     var table1_items = [];
     var i = 0;
     var airtable_data = "https://api.airtable.com/v0/appxnGEdVS7qDdA5e/requirement?api_key=keyPGaOFOWVMaoigo&maxRecords=17&view=Grid%20view"
@@ -43,4 +43,3 @@ $(document).ready(function(){
          });
     });
   });
-    });
