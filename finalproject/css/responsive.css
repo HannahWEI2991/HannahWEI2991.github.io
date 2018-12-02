@@ -155,7 +155,7 @@
     z-index: 999999;
   }
   .logo a {
-    padding: 0;
+    padding-top: 5em;
   }
 
   .slider-area {
