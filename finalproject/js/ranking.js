@@ -9,7 +9,7 @@ var chart = Highcharts.chart('ranking1', {
 		reversed:true,
 		title: {
 			text: '排名'
-		}
+		},
 	},
 	legend: {
 		layout: 'vertical',
@@ -22,7 +22,7 @@ var chart = Highcharts.chart('ranking1', {
 				connectorAllowed: false
 			},
 			pointStart: 2014
-		}
+		},
 	},
 	series: [{
 		name: '香港大学',
@@ -50,10 +50,10 @@ var chart = Highcharts.chart('ranking1', {
 					layout: 'horizontal',
 					align: 'center',
 					verticalAlign: 'bottom'
-				}
-			}
-		}]
-	}
+				},
+			},
+		}],
+	},
 });
 
 var chart = Highcharts.chart('ranking2', {
@@ -134,72 +134,4 @@ var chart = Highcharts.chart('ranking2', {
 				 color: 'rgb(115,149,189)',
 				 data: [27]
 			 }]
-});
-
-
-var chart = Highcharts.chart('library', {
-	chart: {
-		type: 'bar',
-		renderTo: 'library'
-	},
-	title: {
-		text: '香港高校图书馆学术资源对比'
-	},
-	subtitle: {
-		text: '数据来源: 各高校图书馆官网数据库'
-	},
-	xAxis: {
-		categories: ['实体书', '电子书', '电子期刊'],
-		title: {
-			text: null
-		}
-	},
-	yAxis: {
-		min: 0,
-		title: {
-			text: '数量',
-			align: 'high'
-		},
-		labels: {
-			overflow: 'justify'
-		}
-	},
-	tooltip: {
-		valueSuffix: ' 百万'
-	},
-	plotOptions: {
-		bar: {
-			dataLabels: {
-				enabled: true,
-				allowOverlap: true // 允许数据标签重叠
-			}
-		}
-	},
-	legend: {
-		layout: 'vertical',
-		align: 'right',
-		verticalAlign: 'top',
-		x: -40,
-		y: 100,
-		floating: true,
-		borderWidth: 1,
-		backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
-		shadow: true
-	},
-	series: [{
-		name: '香港大学',
-		data: [3093115, 6012706, 341421]
-	}, {
-		name: '香港中文大学',
-		data: [2737105, 4399769, 143108]
-	}, {
-		name: '香港城市大学',
-		data: [1019000, 1972000, 80800]
-	}, {
-		name: '香港浸会大学',
-		data: [1256224, 1313485, 125405]
-	}, {
-		name: '香港理工大学',
-		data: [901050, 3243482, 131780]
-	}]
 });
