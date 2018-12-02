@@ -1874,7 +1874,7 @@ div#preloader {
 /*----------------------------------------*/
 
 .header-bg {
-  background: url(../img/slider/slider1.jpg);
+  background: url(../img/slider/banner1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
@@ -1882,7 +1882,63 @@ div#preloader {
 }
 
 .header-bgrk {
-  background: url(../img/intro/ranking.jpg);
+  background: url(../img/slider/banner2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  background-attachment: fixed;
+}
+
+.header-bglb {
+  background: url(../img/slider/banner3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  background-attachment: fixed;
+}
+
+.header-bgdiy {
+  background: url(../img/slider/banner4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  background-attachment: fixed;
+}
+
+.header-bghku {
+  background: url(../img/intro/hku-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  background-attachment: fixed;
+}
+
+.header-bgcuhk {
+  background: url(../img/intro/cuhk-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  background-attachment: fixed;
+}
+
+.header-bgcityu {
+  background: url(../img/intro/cityu-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  background-attachment: fixed;
+}
+
+.header-bghkbu {
+  background: url(../img/intro/hkbu-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  background-attachment: fixed;
+}
+
+.header-bgpolyu {
+  background: url(../img/intro/polyu-1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
@@ -1978,7 +2034,7 @@ div#preloader {
   border-bottom: 1px solid #ddd;
   color: #444;
   font-size: 17px;
-  font-weight: 500;
+  font-weight: 800;
   margin-bottom: 0;
   padding: 15px 10px;
   text-transform: uppercase;
@@ -2055,6 +2111,7 @@ div#preloader {
 
 .blog-page .single-blog {
   margin-bottom: 40px;
+  margin-left:20px;
 }
 
 .pst-content p a {
@@ -2116,13 +2173,14 @@ div#preloader {
 .post-information h3 {
   color: #3ec1d5;
   margin-bottom:0;
-  margin-top:20px;
+  margin-top:15px;
   font-size: 22px;
+  font-weight:800;
   text-transform: uppercase;
 }
 
 .post-information {
-  padding: 20px 0;
+  padding: 0px;
 }
 
 .post-information .entry-meta span a {
