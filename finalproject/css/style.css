@@ -212,7 +212,7 @@ div#preloader {
 }
 
 .area-padding {
-  padding: 70px 0px 80px;
+  padding: 70px 0px 60px;
 }
 
 .area-padding-2 {
@@ -1875,6 +1875,14 @@ div#preloader {
 
 .header-bg {
   background: url(../img/slider/slider1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  background-attachment: fixed;
+}
+
+.header-bgrk {
+  background: url(../img/intro/ranking.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;

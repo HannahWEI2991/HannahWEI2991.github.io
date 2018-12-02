@@ -34,6 +34,10 @@
   <!-- Responsive Stylesheet File -->
   <link href="css/responsive.css" rel="stylesheet">
 
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.4.11/d3.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.1.29/c3.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.1.29/c3.css" rel="stylesheet" type="text/css">
+
   <!-- =======================================================
     Theme Name: eBusiness
     Theme URL: https://bootstrapmade.com/ebusiness-bootstrap-corporate-template/
@@ -96,9 +100,10 @@
       </div>
       <!-- header-area end -->
     </header>
+    <!-- header end -->
 
     <!-- Start Bottom Header -->
-    <div class="header-bg page-area">
+    <div class="header-bgrk page-area">
       <div class="home-overly"></div>
       <div class="container">
         <div class="row">
@@ -109,7 +114,7 @@
                   <h1 class="title2" style="font-weight:bold">港校传媒专业介绍 </h1>
                 </div>
                 <div class="layer3 wow zoomInUp" data-wow-duration="1.5s" data-wow-delay="1s">
-                  <h2 class="title3"style="font-size:30px">香港大学 HKU</h2>
+                  <h2 class="title3" style="font-size:30px">统计数据 · 世界排名</h2>
                 </div>
               </div>
             </div>
@@ -119,7 +124,7 @@
     </div>
     <!-- END Header -->
 
-  <div class="blog-page area-padding" style="margin-top:0px">
+  <div class="blog-page area-padding" style="margin-top:50px">
     <div class="container">
       <div class="row">
         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
@@ -129,6 +134,22 @@
             </div>
             <div class="single-blog-page">
               <!-- recent start -->
+              <div class="single-blog-page">
+                <div class="left-blog">
+                  <h4>数据统计</h4>
+                  <ul>
+                    <li>
+                      <a href="#"><i class="fa fa-bar-chart"></i> 院校及专业世界排名</a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fas fa-book"></i>  图书馆资源</a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fas fa-users"></i>  毕业生竞争力数据</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
               <div class="left-blog">
                 <h4>各高校开设专业</h4>
                 <div class="recent-post">
@@ -136,11 +157,11 @@
                   <div class="recent-single-post">
                     <div class="post-img">
                       <a href="#">
-												   <img src="img/intro/hku.jpg" alt="">
+												   <img src="img/intro/HKU.jpg" alt="">
 												</a>
                     </div>
                     <div class="pst-content">
-                      <p><a href="香港大学.html">香港大学<br>HKU</a></p>
+                      <p><a href="#">香港大学<br>HKU</a></p>
                     </div>
                   </div>
                   <!-- End single post -->
@@ -152,7 +173,7 @@
 												</a>
                     </div>
                     <div class="pst-content">
-                      <p><a href="香港中文大学.html">香港中文大学<br>CUHK</a></p>
+                      <p><a href="#">香港中文大学<br>CUHK</a></p>
                     </div>
                   </div>
                   <!-- End single post -->
@@ -160,11 +181,11 @@
                   <div class="recent-single-post">
                     <div class="post-img">
                       <a href="#">
-												   <img src="img/intro/cityu.png" alt="">
+												   <img src="img/intro/cityU.jpg" alt="">
 												</a>
                     </div>
                     <div class="pst-content">
-                      <p><a href="香港城市大学.html">香港城市大学<br>cityU</a></p>
+                      <p><a href="#">香港城市大学<br>cityU</a></p>
                     </div>
                   </div>
                   <!-- End single post -->
@@ -176,7 +197,7 @@
 												</a>
                     </div>
                     <div class="pst-content">
-                      <p><a href="香港浸会大学.html">香港浸会大学<br>HKBU</a></p>
+                      <p><a href="#">香港浸会大学<br>HKBU</a></p>
                     </div>
                   </div>
                   <!-- End single post -->
@@ -188,35 +209,13 @@
                         </a>
                     </div>
                     <div class="pst-content">
-                      <p><a href="香港理工大学.html">香港理工大学<br>PolyU</a></p>
+                      <p><a href="#">香港理工大学<br>PolyU</a></p>
                     </div>
                   </div>
                   <!-- End single post -->
                 </div>
               </div>
               <!-- recent end -->
-            </div>
-            <div class="single-blog-page">
-              <div class="left-blog">
-                <h4>世界排名</h4>
-                <ul>
-                  <li>
-                    <a href="世界排名.html">2014-2018 QS世界排名</a>
-                  </li>
-                  <li>
-                    <a href="世界排名.html">2014-2018 QS亚洲排名</a>
-                  </li>
-                  <li>
-                    <a href="世界排名.html">2014-2018 QS专业排名</a>
-                  </li>
-                  <li>
-                    <a href="世界排名.html">2014-2018 THE世界排名</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="single-blog-page">
             </div>
 
             <div class="single-blog-page">
@@ -233,48 +232,25 @@
               <!-- single-blog start -->
               <article class="blog-post-wrapper" style="margin-left:20px">
                 <div class="post-thumbnail">
-                  <img style="width:500px;height:334px;" src="img/intro/hku.jpg" alt="">
+                  <img style="width:596.6px;height:334px;" src="img/intro/ranking.jpg" alt="">
                 </div>
                 <div class="post-information">
-                  <h2>香港大学传媒专业介绍</h2>
-                  <div class="entry-meta">
-                  </div>
                   <div class="entry-content">
-                    <h3>新闻学硕士</h3>
-                    <p>Master of Journalism</p><br>
-                    <p><b>项目介绍：</b>港大新闻学硕士是港大唯一一个传媒专业，在国际上知名度很高。港大MJ项目以国际化、重实践、数字媒体为特色，提供全英的综合性融合媒体课程。学生会接受新闻报道与写作等核心技能训练，同时学习融合媒体技术，比如制作广播电视新闻、数字新闻工具、制作纪录片、摄影等。该项目拥有许多富有业界经验和国际背景的老师，并向学生提供全球各地媒体实习的机会。</p>
-                    <p><b>学制：</b>一年制</p>
-                    <p><b>学费：</b>HKD$196,800 (2018)</p>
-                    <p><b>招生人数：</b>约60~70人</p>
-                    <p><b>实习支持：</b>院内与全球诸多知名媒体机构合作，实习机会丰富。</p>
-                    <p><b>就业方向：</b>大部分毕业生在媒体及公关公司工作，也有毕业生去到如彭博,CNN,国际先驱导报,亚洲华尔街日报, 纽约时报和华盛顿邮报等国际知名媒体机构。</p>
-                    <!--申请要求 -->
-                      <div class="faq-details">
-                        <div class="panel-group" id="accordion">
-
-                          <!-- Panel Default -->
-                          <div class="panel panel-default">
-                            <div class="panel-heading">
-                              <h4 class="check-title">
-            											<a data-toggle="collapse" data-parent="#accordion" href="#check2">
-                                                            <span class="acc-icons"></span>查看专业课程设置
-            											</a>
-            										</h4>
-                            </div>
-                            <div id="check2" class="panel-collapse collapse">
-                              <div class="panel-body">
-                                <p><b>必修课</b><br>Reporting and writing<br>Video news production<br>Media law and ethics<br>Digital journalism principles and tools<br>Master’s project.</p>
-                                <p><b>核心选修课（报道与写作方向）</b><br>Advanced reporting and writing (English)<br>Special topics in journalism III<br>Reporting global affairs<br>Long form and feature writing<br>Global financial journalism.</p>
-                                <p><b>核心选修课（视听方向）</b><br>Special topics in journalism II<br>Photojournalism; Documentary film appreciation<br>Backpack journalism.</p>
-                                <p><b>核心选修课（数据方向）</b><br>Special topics in journalism IV<br>Research methods for media studies<br>Data journalism<br>Social media analytics for journalists<br>Digital media entrepreneurship.</p>
-                                <p><b>非核心选修课 </b><br>Special topics in journalism I<br>Readings in China media and society<br>Journalism internship<br>Interpreting and using business journalism in a global era.</p>
-                                <a href="https://jmsc.hku.hk/revamp/wp-content/uploads/2018/08/MJ_2018-2019-Regulations-Syllabus.pdf">下载课程设置PDF</a><br>
-                              </div>
-                            </div>
-                          </div>
-                          <!-- End Panel Default -->
-                        </div>
-                      </div>                     </div>
+                    <h3>院校及专业世界排名</h3><br>
+                    <hr style="margin-top:0px">
+                    <p style="font-size:12px"><b>注: </b>此处数据来源QS世界大学排名。QS为英国Quacquarelli Symonds发表的年度大学排行榜。榜单从学术互评、师生比、教职员引文量、雇主评价、国际生比例、国际教职员比例对大学进行排行，涵盖世界综合与学科，另有亚洲、新兴欧洲与中亚地区、拉丁美洲、阿拉伯地区、金砖五国共五个持不同准则的地区排名。QS是世上最受注目的大学排行榜之一，但也因具较多主观指标而存在批评意见。所以，排名数据并不能完完全全代表一个院校及专业的实力，仅供择校参考。</p><br>
+                    <div id="ranking1" style="max-width:800px;height:400px"></div><br><br>
+                    <div id="ranking2" style="min-width:400px;height:400px"></div><br><br>
+                    <div class="blog-pagination" style="text-align:center">
+                      <ul class="pagination">
+                        <li><a href="#">&lt;</a></li>
+                        <li class="active"><a href="QS世界排名.html">QS世界排名</a></li>
+                        <li><a href="图书馆数据.html">图书馆资源</a></li>
+                        <li><a href="毕业生数据.html">毕业生竞争力</a></li>
+                        <li><a href="图书馆数据.html">&gt;</a></li>
+                      </ul>
+                    </div>
+                  </div>
                   </div>
                 </div>
               </article>
@@ -317,6 +293,8 @@
 
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
+  <!-- highchart cdn -->
+  <script src="https://cdn.hcharts.cn/highcharts/highcharts.js"></script>
   <!-- JavaScript Libraries -->
   <script src="lib/jquery/jquery.min.js"></script>
   <script src="lib/bootstrap/js/bootstrap.min.js"></script>
@@ -329,10 +307,8 @@
   <script src="lib/nivo-slider/js/jquery.nivo.slider.js" type="text/javascript"></script>
   <script src="lib/appear/jquery.appear.js"></script>
   <script src="lib/isotope/isotope.pkgd.min.js"></script>
-
   <!-- Contact Form JavaScript File -->
-  <script src="contactform/contactform.js"></script>
-
+  <script src="js/ranking.js"></script>
   <script src="js/main.js"></script>
 </body>
 
