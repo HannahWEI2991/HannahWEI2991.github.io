@@ -225,9 +225,9 @@ div#preloader {
 
 .section-headline h2 {
   display: inline-block;
-  font-size: 35px;
+  font-size: 40px;
   font-weight: 600;
-  margin-bottom: 60px;
+  margin-bottom: 70px;
   position: relative;
   text-transform: capitalize;
 }
