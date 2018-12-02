@@ -250,6 +250,7 @@
     font-size: 22px;
   }
   .footer-content {
+    padding-top:0px;
     margin-bottom: 30px;
   }
   .header-bottom h1 {
