@@ -225,9 +225,9 @@ div#preloader {
 
 .section-headline h2 {
   display: inline-block;
-  font-size: 30px;
+  font-size: 35px;
   font-weight: 600;
-  margin-bottom: 70px;
+  margin-bottom: 60px;
   position: relative;
   text-transform: capitalize;
 }
@@ -1767,7 +1767,7 @@ div#preloader {
   color: #222;
   padding: 0;
   margin: 0;
-  font-size: 36px;
+  font-size: 18px;
   font-weight: bold;
   line-height: 1;
 }
