@@ -1766,7 +1766,7 @@ div#preloader {
 .footer-logo h2 {
   color: #222;
   padding: 0;
-  margin: 0;
+  margin: 5px;
   font-size: 18px;
   font-weight: bold;
   line-height: 1;
