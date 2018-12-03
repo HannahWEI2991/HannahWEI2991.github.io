@@ -3,7 +3,7 @@ var map1 = L.map('map1')
       .addLayer(mapboxTiles1)
       .setView([23.039620765729655,113.40595504359848], 15);
 var marker1 = L.marker([23.040620985729655,113.39929990009848])
-       .bindPopup('雅乐轩酒店')
+       .bindPopup('雅乐轩酒店'>)
        .addTo(map1);
 
 
@@ -29,5 +29,5 @@ var map4 = L.map('map4')
               .addLayer(mapboxTiles4)
               .setView([22.3051363515,114.1792710235], 18);
 var marker4 = L.marker([22.3051363515,114.1792710235])
-              .bindPopup('香港大学仪礼堂')
+              .bindPopup('香港理工大学赛马会创新楼')
               .addTo(map4);
