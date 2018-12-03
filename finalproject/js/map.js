@@ -3,7 +3,7 @@ var map1 = L.map('map1')
       .addLayer(mapboxTiles1)
       .setView([23.039620765729655,113.40595504359848], 15);
 var marker1 = L.marker([23.040620985729655,113.39929990009848])
-       .bindPopup('雅乐轩酒店'>)
+       .bindPopup('雅乐轩酒店')
        .addTo(map1);
 
 
