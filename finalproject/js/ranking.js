@@ -130,7 +130,7 @@ var chart = Highcharts.chart('ranking2', {
 				 color: 'rgb(165,237,237)',
 				 data: [51]
 			 }, {
-				 name: '香港理工大学',
+				 name: '香港城市大学',
 				 color: 'rgb(115,149,189)',
 				 data: [27]
 			 }]
