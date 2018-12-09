@@ -44,6 +44,14 @@
   <!-- Responsive Stylesheet File -->
   <link href="css/responsive.css" rel="stylesheet">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.4/leaflet.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.4/leaflet.js"></script>
+  <script src="https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/leaflet.markercluster.js"></script>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.4.11/d3.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.1.29/c3.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.1.29/c3.css" rel="stylesheet" type="text/css">
+
   <!-- =======================================================
     Theme Name: eBusiness
     Theme URL: https://bootstrapmade.com/ebusiness-bootstrap-corporate-template/
@@ -109,9 +117,8 @@
       </div>
       <!-- header-area end -->
     </header>
-
     <!-- Start Bottom Header -->
-    <div class="header-bghku page-area">
+    <div class="header-bglb page-area">
       <div class="home-overly"></div>
       <div class="container">
         <div class="row">
@@ -119,10 +126,7 @@
             <div class="slider-content text-center" style="padding-bottom:80px">
               <div class="header-bottom">
                 <div class="layer2 wow zoomIn" data-wow-duration="1s" data-wow-delay=".4s">
-                  <h1 class="title2" style="font-weight:bold">港校传媒专业介绍 </h1>
-                </div>
-                <div class="layer3 wow zoomInUp" data-wow-duration="1.5s" data-wow-delay="1s">
-                  <h2 class="title3"style="font-size:30px">香港大学 HKU</h2>
+                  <h1 class="title2" style="font-weight:bold">宣讲会信息 </h1>
                 </div>
               </div>
             </div>
@@ -131,156 +135,152 @@
       </div>
     </div>
     <!-- END Header -->
+    <!-- header end -->
+    <div class="row">
+      <div class="col-md-6 col-sm-6 col-xs-12" style="width:100%;">
+        <div class="faq-details">
+          <div class="panel-group" id="accordion">
 
-  <div class="blog-page area-padding">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-          <div class="page-head-blog">
-
-            <div class="hidden-xs single-blog-page">
-              <!-- recent start -->
-              <div class="left-blog">
-                <h4>各高校开设专业</h4>
-                <div class="recent-post">
-                  <!-- start single post -->
-                  <div class="recent-single-post">
-                    <div class="post-img">
-                      <a href="#">
-												   <img src="img/intro/hku.jpg" alt="">
-												</a>
-                    </div>
-                    <div class="pst-content">
-                      <p><a href="香港大学.html">香港大学<br>HKU</a></p>
-                    </div>
-                  </div>
-                  <!-- End single post -->
-                  <!-- start single post -->
-                  <div class="recent-single-post">
-                    <div class="post-img">
-                      <a href="#">
-												   <img src="img/intro/cuhk.jpg" alt="">
-												</a>
-                    </div>
-                    <div class="pst-content">
-                      <p><a href="香港中文大学.html">香港中文大学<br>CUHK</a></p>
+            <!-- 港大新闻宣讲会-->
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="check-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#check1">
+                      <span class="acc-icons"></span>香港大学新闻学硕士申请咨询会
+                    </a>
+                  </h4>
+              </div>
+              <div id="check1" class="panel-collapse collapse in">
+                <div class="panel-body">
+                  <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="well-middle">
+                      <div class="single-well">
+                          <br>
+                          <p><b>时间：</b>2018年12月5日星期三 18:30 - 20:00</p>
+                          <p><b>地点：</b>香港大学仪礼堂数字媒体实验室</p>
+                          <p><b>内容：</b>港大MJ项目课程主任Kevin Sites介绍项目结构、课程设置及录取要求。</p>
+                          <p><b>报名方式：</b>写邮件至jmscmj@hku.hk <br>或 拨打电话+852 3917 4113.</p>
+                      </div>
                     </div>
                   </div>
-                  <!-- End single post -->
-                  <!-- start single post -->
-                  <div class="recent-single-post">
-                    <div class="post-img">
-                      <a href="#">
-												   <img src="img/intro/cityu.png" alt="">
-												</a>
-                    </div>
-                    <div class="pst-content">
-                      <p><a href="香港城市大学.html">香港城市大学<br>cityU</a></p>
+                  <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="well-left">
+                      <div class="single-well">
+                      <div id="map3" style="width:100%; height: 300px; border: 4px solid #f2f4fb; margin:auto;"></div>
+                      </div>
                     </div>
                   </div>
-                  <!-- End single post -->
-                  <!-- start single post -->
-                  <div class="recent-single-post">
-                    <div class="post-img">
-                      <a href="#">
-												   <img src="img/intro/hkbu.jpg" alt="">
-												</a>
-                    </div>
-                    <div class="pst-content">
-                      <p><a href="香港浸会大学.html">香港浸会大学<br>HKBU</a></p>
-                    </div>
-                  </div>
-                  <!-- End single post -->
-                  <!-- start single post -->
-                  <div class="recent-single-post">
-                    <div class="post-img">
-                      <a href="#">
-                           <img src="img/intro/polyu.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="pst-content">
-                      <p><a href="香港理工大学.html">香港理工大学<br>PolyU</a></p>
-                    </div>
-                  </div>
-                  <!-- End single post -->
                 </div>
               </div>
-              <!-- recent end -->
             </div>
-            <div class="hidden-xs single-blog-page">
-              <div class="left-blog">
-                <h4>数据统计</h4>
-                <ul>
-                  <li>
-                    <a href="QS世界排名.html"><i class="fa fa-bar-chart"></i> 院校及专业世界排名</a>
-                  </li>
-                  <li>
-                    <a href="图书馆数据.html"><i class="fas fa-book"></i>  图书馆资源</a>
-                  </li>
-                </ul>
+            <!-- End -->
+
+            <!-- 港理工多媒体宣讲会-->
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="check-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#check2">
+                      <span class="acc-icons"></span>港理工多媒体科艺申请咨询会
+                    </a>
+                  </h4>
               </div>
-            </div>
-
-          </div>
-        </div>
-        <!-- End left sidebar -->
-        <!-- Start single blog -->
-        <div class="col-md-8 col-sm-8 col-xs-12">
-          <div class="row">
-            <div class="col-md-12 col-sm-12 col-xs-12">
-              <!-- single-blog start -->
-              <article class="blog-post-wrapper" style="margin-left:20px">
-                <div class="post-information">
-                  <div class="entry-content">
-                    <h3>新闻学硕士</h3>
-                    <p>Master of Journalism</p><br>
-                    <p><b>项目介绍：</b>港大新闻学硕士是港大唯一一个传媒专业，在国际上知名度很高。港大MJ项目以国际化、重实践、数字媒体为特色，提供全英的综合性融合媒体课程。学生会接受新闻报道与写作等核心技能训练，同时学习融合媒体技术，比如制作广播电视新闻、数字新闻工具、制作纪录片、摄影等。该项目拥有许多富有业界经验和国际背景的老师，并向学生提供全球各地媒体实习的机会。</p>
-                    <p><b>学制：</b>一年制</p>
-                    <p><b>学费：</b>HKD$196,800 (2018)</p>
-                    <p><b>招生人数：</b>约60~70人</p>
-                    <p><b>实习支持：</b>院内与全球诸多知名媒体机构合作，实习机会丰富。</p>
-                    <p><b>就业方向：</b>大部分毕业生在媒体及公关公司工作，也有毕业生去到如彭博,CNN,国际先驱导报,亚洲华尔街日报, 纽约时报和华盛顿邮报等国际知名媒体机构。</p>
-                    <!--申请要求 -->
-                      <div class="faq-details">
-                        <div class="panel-group" id="accordion">
-
-                          <!-- Panel Default -->
-                          <div class="panel panel-default">
-                            <div class="panel-heading">
-                              <h4 class="check-title">
-            											<a data-toggle="collapse" data-parent="#accordion" href="#check2">
-                                                            <span class="acc-icons"></span>查看专业课程设置
-            											</a>
-            										</h4>
-                            </div>
-                            <div id="check2" class="panel-collapse collapse">
-                              <div class="panel-body">
-                                <p><b>必修课</b><br>Reporting and writing<br>Video news production<br>Media law and ethics<br>Digital journalism principles and tools<br>Master’s project.</p>
-                                <p><b>核心选修课（报道与写作方向）</b><br>Advanced reporting and writing (English)<br>Special topics in journalism III<br>Reporting global affairs<br>Long form and feature writing<br>Global financial journalism.</p>
-                                <p><b>核心选修课（视听方向）</b><br>Special topics in journalism II<br>Photojournalism; Documentary film appreciation<br>Backpack journalism.</p>
-                                <p><b>核心选修课（数据方向）</b><br>Special topics in journalism IV<br>Research methods for media studies<br>Data journalism<br>Social media analytics for journalists<br>Digital media entrepreneurship.</p>
-                                <p><b>非核心选修课 </b><br>Special topics in journalism I<br>Readings in China media and society<br>Journalism internship<br>Interpreting and using business journalism in a global era.</p>
-                                <a href="https://jmsc.hku.hk/revamp/wp-content/uploads/2018/08/MJ_2018-2019-Regulations-Syllabus.pdf">下载课程设置PDF</a><br>
-                              </div>
-                            </div>
-                          </div>
-                          <!-- End Panel Default -->
-                        </div>
-                      </div>                     </div>
+              <div id="check2" class="panel-collapse collapse in">
+                <div class="panel-body">
+                  <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="well-middle">
+                      <div class="single-well">
+                        <br>
+                        <p><b>时间：</b>2019年1月12日 星期六 下午2:00开始</p>
+                        <p><b>地点：</b>香港理工大学赛马会创新楼(V区) 11层 V1121</p>
+                        <p><b>报名方式：</b><a href="https://polyumscmet.eventbrite.com" target="_blank">网上预约</a></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="well-left">
+                      <div class="single-well">
+                      <div id="map4" style="width: 100%; height: 300px; border: 4px solid #f2f4fb; margin:auto;"></div>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </article>
-              <div class="clear"></div>
-              <!-- single-blog end -->
+              </div>
             </div>
+            <!-- End -->
+
+            <!-- 联展广州站-->
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="check-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#check3">
+                      <span class="acc-icons"></span>香港教育硕士联展·广州站
+                    </a>
+                  </h4>
+              </div>
+              <div id="check3" class="panel-collapse collapse in">
+                <div class="panel-body">
+                  <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="well-middle">
+                      <div class="single-well">
+                        <br>
+                        <p><b>时间：</b>2018年12月16日星期日 14:00 - 18:00</p>
+                        <p><b>地点：</b>广州大学城小谷围街立德街66号雅乐轩酒店</p>
+                        <p><b>内容：</b>港大、港中文、港理工等学院课程负责人亲临现场。联展采取讲座+摊位咨询的活动形式，申请者可以和招生官面对面交流。</p>
+                        <p><b>报名方式：</b>直接到场</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="well-left">
+                      <div class="single-well">
+                      <div id="map1" style="width:100%; height: 300px; border: 4px solid #f2f4fb; margin:auto;"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End -->
+
+            <!-- 联展北京站-->
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="check-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#check4">
+                      <span class="acc-icons"></span>香港教育硕士联展·北京站
+                    </a>
+                  </h4>
+              </div>
+              <div id="check4" class="panel-collapse collapse in">
+                <div class="panel-body">
+                  <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="well-middle">
+                      <div class="single-well">
+                        <br>
+                        <p><b>时间：</b>2018年12月9日星期日 14:00 - 18:00</p>
+                        <p><b>地点：</b>北京市海淀区学院路39号 唯实国际文化交流中心 昆仑厅</p>
+                        <p><b>内容：</b>港大、港中文、港理工等学院课程负责人亲临现场。联展采取讲座+摊位咨询的活动形式，申请者可以和招生官面对面交流。</p>
+                        <p><b>报名方式：</b>直接到场</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="well-left">
+                      <div class="single-well">
+                      <div id="map2" style="width: 100%; height: 300px; border: 4px solid #f2f4fb; margin:auto;"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End -->
           </div>
         </div>
       </div>
-    </div>
-  </div>
-  <!-- End Blog Area -->
-  <div class="clearfix"></div>
 
+    </div>
+    <!-- end Row -->
   <!-- Start Footer bottom Area -->
   <footer>
     <div class="footer-area">
@@ -363,6 +363,8 @@
 
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
+  <!-- highchart cdn -->
+<script src="https://code.highcharts.com/highcharts.js"></script>
   <!-- JavaScript Libraries -->
   <script src="lib/jquery/jquery.min.js"></script>
   <script src="lib/bootstrap/js/bootstrap.min.js"></script>
@@ -375,10 +377,8 @@
   <script src="lib/nivo-slider/js/jquery.nivo.slider.js" type="text/javascript"></script>
   <script src="lib/appear/jquery.appear.js"></script>
   <script src="lib/isotope/isotope.pkgd.min.js"></script>
-
   <!-- Contact Form JavaScript File -->
-  <script src="contactform/contactform.js"></script>
-
+  <script src="js/map.js"></script>
   <script src="js/main.js"></script>
 </body>
 
